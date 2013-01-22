@@ -1,4 +1,5 @@
-Arduino
+EMN 310 Code Base
 =======
-
-Arduino code for paper robot
+Code base for EMN310 Projects.
+-Arduino
+-Android
