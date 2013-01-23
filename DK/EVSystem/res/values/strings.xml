@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EVSystem</string>
+    <string name="menu_settings">Menu Settings</string>
+    
+    <string name="charging_stations">Charging Stations</string>
+    <string name="ev_friends">EV Friends</string>
+	<string name="battery">Battery Status</string>
+</resources>
