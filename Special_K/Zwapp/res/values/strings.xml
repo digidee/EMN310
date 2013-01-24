@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Zwapp</string>
+    <string name="name">Special K</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_user_view">User View</string>
+    <string name="sharestatusoff">Share</string>
+	<string name="sharestatuson">Unshare</string>
+    
+</resources>
