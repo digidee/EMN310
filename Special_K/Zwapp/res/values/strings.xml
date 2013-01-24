@@ -8,4 +8,7 @@
     <string name="sharestatusoff">Share</string>
 	<string name="sharestatuson">Unshare</string>
     
+	<string name="green">#00EE00</string>
+	<string name="red">#8A3324</string>
+	
 </resources>

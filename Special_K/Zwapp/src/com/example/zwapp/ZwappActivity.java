@@ -1,12 +1,10 @@
 package com.example.zwapp;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-public class ZwappActivity extends Activity {
+/* public class ZwappActivity extends Activity {
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,9 +17,16 @@ public class ZwappActivity extends Activity {
 		ArrayAdapter<String> userlist = new ArrayAdapter<String>(this, 
 				android.R.layout.simple_list_item_1, users);
 		
-		listView.setAdapter(userlist);
-		
-				
+		listView.setAdapter(userlist); 
+	} */
+
+public class ZwappActivity extends ListActivity {
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		String[] users = new String[] { "DeeKay", "Keegil", "Theresol", "ArntF", 
+				"InvisibleMan", "TheBatSign", "R2D2" };
+		UserAdapter adapter = new UserAdapter(this, users);
+		setListAdapter(adapter);
 	}
 
 	@Override
