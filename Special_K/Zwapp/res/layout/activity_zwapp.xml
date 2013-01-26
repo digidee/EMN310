@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZwappActivity" >
+    
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30sp"
+        android:paddingRight="50sp"
+        android:paddingTop="30sp"
+        android:paddingBottom="30sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#00EE00"
+        android:text="@string/name" />
+    
+    <Button
+        android:id="@+id/sharebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nametext"
+        android:layout_alignBottom="@+id/nametext"
+        android:layout_toRightOf="@+id/nametext"
+        android:text="@string/sharestatusoff" />
+    
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <!-- ListView 
+	    android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nametext"
+        android:background="#00EE00" -->
+
+</RelativeLayout>
