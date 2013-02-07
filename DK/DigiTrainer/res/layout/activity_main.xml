@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+    
+	<TextView 
+	    android:id="@+id/maintext" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="200px" 
+	    android:text="DigiTrainer"
+	    android:textSize="80px"
+	    android:textStyle="bold" 
+	   	android:gravity="center"
+	   	android:layout_gravity="center_horizontal"
+	    android:background="#FFFFFF"
+	    android:layout_marginBottom="50px"
+	    />  
+
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+			android:background="#FFFFFF"
+		    >
+	
+		    <Button
+		        android:id="@+id/excersice_a"
+			    android:layout_width="300px"
+			    android:layout_height="125px"	
+			    android:textStyle="normal"
+			    android:layout_gravity="center_horizontal"
+			    android:textSize="30px"
+			    android:background="@drawable/custom_button" 
+			    android:textColor="@drawable/text_color"
+		        android:text="Excersice Programme" 
+		        android:layout_marginBottom="20px"
+		        />
+		    
+		    
+		    <Button
+		        android:id="@+id/excersice_b"
+			    android:layout_width="300px"
+			    android:layout_height="125px"
+			    android:layout_gravity="center_horizontal"	
+			    android:textStyle="normal"
+			    android:textSize="30px"
+			    android:background="@drawable/custom_button" 
+			    android:textColor="@drawable/text_color"
+		        android:text="Show Progress" 
+		        android:layout_marginBottom="20px"
+		        />
+		    
+		    
+		    <Button
+		        android:id="@+id/registervalues"
+			    android:layout_width="300px"
+			    android:layout_height="125px"
+			    android:layout_gravity="center_horizontal"
+			    android:text="Register Values"
+			    android:textSize="30px"
+			    android:textColor="@drawable/text_color"
+			    android:textStyle="normal"
+			    android:background="@drawable/custom_button" 
+			    />
+	
+	</LinearLayout >
+	
+</LinearLayout >
