@@ -3,25 +3,33 @@ package com.example.zwapp2;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Timer;
 
 
 import android.app.ExpandableListActivity;
 import android.os.Bundle;
-import android.os.Debug;
-import android.os.Handler;
-import android.os.Message;
+import android.os.SystemClock;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Chronometer;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
-import android.widget.Chronometer;
-import android.os.SystemClock;
+import android.widget.Toast;
+import android.app.Activity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
+import android.widget.CheckedTextView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class ZwappActivity extends ExpandableListActivity{
 	
@@ -37,6 +45,11 @@ public class ZwappActivity extends ExpandableListActivity{
 		{
 		"DeeKay", "Special_K", "Theresol", "Anon"
 		};
+	
+	public ArrayList<String> groupItem, tempChild;
+	public ArrayList<Object> Childtem = new ArrayList<Object>();
+	public LayoutInflater minflater;
+	public Activity activity;
 	
 	static final String shareInfo[][] = 
 		{
@@ -78,6 +91,16 @@ public class ZwappActivity extends ExpandableListActivity{
 		
 
 		
+		final Button button = (Button) findViewById(R.id.connectButton); 
+
+		button.setFocusable(false);   /// THIS IS THE SOLUTION
+
+		button.setOnClickListener(new Button.OnClickListener() {
+		    public void onClick(View v) {
+		    	Log.d( LOG_TAG, "Clicked connect" );
+		    }
+		});
+	
 	    
 	     final Button testButton = (Button) findViewById(R.id.shareButton);
 	     testButton.setOnClickListener(new View.OnClickListener() {
@@ -143,6 +166,34 @@ public class ZwappActivity extends ExpandableListActivity{
 	        return false;
 	    }
 	  
+
+	  
+
+		public View getChildView(int groupPosition, final int childPosition,
+				boolean isLastChild, View convertView, ViewGroup parent) {
+		//  final View itemRenderer = super.getChildView(groupPosition, childPosition, isLastChild, convertView, parent);
+			tempChild = (ArrayList<String>) Childtem.get(groupPosition);
+			TextView text = null;
+			if (convertView == null) {
+				convertView = minflater.inflate(R.layout.shareinfo, null);
+			}
+			final Button connectButton = (Button) convertView.findViewById(R.id.connectButto2n);
+			connectButton.setText(tempChild.get(childPosition));
+			connectButton.setFocusableInTouchMode(false);
+			connectButton.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					Toast.makeText(activity, tempChild.get(childPosition),
+							Toast.LENGTH_SHORT).show();
+				}
+			});
+
+					
+			return convertView;
+		}
+	  
+	  
+	  
 	  
 	
     public void  onGroupExpand  (int groupPosition) {
@@ -177,6 +228,15 @@ public class ZwappActivity extends ExpandableListActivity{
 		});
 			
     }
+    
+    
+
+    
+    
+    
+    
+    
+    
     
     
     

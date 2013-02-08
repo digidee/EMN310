@@ -40,9 +40,10 @@ public final class R {
         public static final int check1=0x7f080008;
         public static final int childname=0x7f080003;
         public static final int chronometer=0x7f080005;
+        public static final int connectButto2n=0x7f080009;
         public static final int connectButton=0x7f080006;
         public static final int info=0x7f080007;
-        public static final int menu_settings=0x7f080009;
+        public static final int menu_settings=0x7f08000a;
         public static final int shareButton=0x7f080002;
         public static final int userText=0x7f080000;
         public static final int usershare=0x7f080001;

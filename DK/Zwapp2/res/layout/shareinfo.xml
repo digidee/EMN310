@@ -32,6 +32,20 @@
            android:focusable="false"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"/>
+        
+        
+        	
+   	 <Button
+	 	    android:id="@+id/connectButto2n"   
+	 	    android:textSize="15px" 
+	        android:layout_width="100px"
+	        android:layout_height="50px"
+	        android:text="Connect" 
+	        android:gravity="center"
+	        android:textStyle="bold"
+	        android:focusableInTouchMode="false"
+	        android:layout_weight="1" 
+            android:background="@drawable/connect_custom_button"/>
 
 </LinearLayout>
 
