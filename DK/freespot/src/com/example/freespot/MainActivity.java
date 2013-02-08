@@ -69,12 +69,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 				Toast.makeText(this, "Clicked listfrag", Toast.LENGTH_SHORT).show();
 			break;
 			case 1:  	
-				Parkinglot ex = new Parkinglot();
+				ParkingLog ex = new ParkingLog();
 				getSupportFragmentManager().beginTransaction().replace(R.id.container, ex).commit();
 				Toast.makeText(this, tab.getText().toString(), Toast.LENGTH_SHORT).show();
 			break;
 			case 2:  	
-				Moneylog re = new Moneylog();
+				MoneyLog re = new MoneyLog();
 				getSupportFragmentManager().beginTransaction().replace(R.id.container, re).commit();
 				Toast.makeText(this, tab.getText().toString(), Toast.LENGTH_SHORT).show();
 			break;
