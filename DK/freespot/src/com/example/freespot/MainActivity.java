@@ -1,8 +1,6 @@
 package com.example.freespot;
 
 
-import com.example.digitrainer.R;
-
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
@@ -66,7 +64,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 			case 0:  	
 				OverView ov = new OverView();
 				getSupportFragmentManager().beginTransaction().replace(R.id.container, ov).commit();
-				Toast.makeText(this, "Clicked listfrag", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, tab.getText().toString(), Toast.LENGTH_SHORT).show();
 			break;
 			case 1:  	
 				ParkingLog ex = new ParkingLog();
