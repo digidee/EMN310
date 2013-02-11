@@ -2,45 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" 
-    android:gravity="center"
-    android:background="@drawable/custom_row" 
     >
 
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="22px"
-        android:layout_height="22px"
-        android:layout_marginLeft="4px"
-        android:layout_marginRight="10px"
-        android:layout_marginTop="4px"
- 	>
-    </ImageView>
 
     <TextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:text="@+id/label"
-        android:textSize="30px" 
         android:layout_marginLeft="10px"			    
-        android:textColor="@drawable/text_color"
-        android:layout_centerVertical="true"
         >
     </TextView>
          
-         <Button 
-         android:id="@+id/win"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:focusable="false"
-         android:layout_alignParentRight="true"
-         android:layout_marginLeft="4px"
-         android:layout_marginRight="10px" 
-         android:textColor="@drawable/text_color"
-		 android:textStyle="normal"
-		 android:background="@drawable/custom_button" 
-         android:text="Win"/>
          
 
 
