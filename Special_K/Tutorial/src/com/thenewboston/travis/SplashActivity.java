@@ -31,6 +31,7 @@ public class SplashActivity extends Activity {
 				} finally {
 					Intent i = new Intent("com.thenewboston.travis.MENU");
 					startActivity(i);
+					finish();
 				}
 			}
 		};

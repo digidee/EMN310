@@ -128,19 +128,19 @@ public class GFXSurface extends Activity implements OnTouchListener {
 				Canvas canvas = ourHolder.lockCanvas();
 				// draw background color
 				canvas.drawRGB(02, 02, 150);
-				if (x != 0 && y != 0) {
-					canvas.drawBitmap(test, x - (test.getWidth() / 2), y
-							- (test.getHeight() / 2), null);
-				}
 				if (sX != 0 && sY != 0) {
 					canvas.drawBitmap(plus, sX - (plus.getWidth() / 2), sY
 							- (plus.getHeight() / 2), null);
 				}
+				if (x != 0 && y != 0) {
+					canvas.drawBitmap(test, x - (test.getWidth() / 2), y
+							- (test.getHeight() / 2), null);
+				}
 				if (fX != 0 && fY != 0) {
 					canvas.drawBitmap(test, fX - (test.getWidth() / 2) - aniX,
 							fY - (test.getHeight() / 2) - aniY, null);
-					canvas.drawBitmap(plus, fX - (plus.getWidth() / 2), fY
-							- (plus.getHeight() / 2), null);
+					/* canvas.drawBitmap(plus, fX - (plus.getWidth() / 2), fY
+							- (plus.getHeight() / 2), null); */
 				}
 				cX = fX - (test.getWidth() / 2) - aniX;
 				cY = fY - (test.getHeight() / 2) - aniY;
